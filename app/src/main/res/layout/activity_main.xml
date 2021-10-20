@@ -21,7 +21,8 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/paper"/>
+                android:src="@drawable/paper"
+                android:id="@+id/teKep"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,7 +39,8 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/paper"/>
+                android:src="@drawable/paper"
+                android:id="@+id/gepKep"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,13 +69,15 @@
                 android:layout_height="wrap_content"
                 android:text="Ember: 0"
                 android:textSize="27sp"
-                android:layout_marginRight="7sp"/>
+                android:layout_marginRight="7sp"
+                android:id="@+id/emberScore"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Computer: 0"
                 android:textSize="27sp"
-                android:layout_marginRight="7sp"/>
+                android:layout_marginRight="7sp"
+                android:id="@+id/gepScore"/>
 
 
         </LinearLayout>
@@ -89,17 +93,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Kő"
-                android:layout_marginRight="25sp"/>
+                android:layout_marginRight="25sp"
+                android:id="@+id/buttonKo"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Papír"
-                android:layout_marginRight="25sp"/>
+                android:layout_marginRight="25sp"
+                android:id="@+id/buttonPapir"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Olló"
-                android:layout_marginRight="25sp"/>
+                android:layout_marginRight="25sp"
+                android:id="@+id/buttonOllo"/>
 
 
         </LinearLayout>
