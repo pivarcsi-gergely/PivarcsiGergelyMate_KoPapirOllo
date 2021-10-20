@@ -1,12 +1,16 @@
 package hu.petrik.kopapirollo;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.IllegalFormatCodePointException;
 import java.util.Random;
@@ -17,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView emberScore, gepScore;
     private int emberScoreSzam, gepScoreSzam, teTipp, gepTipp;
     private Button buttonKo, buttonPapir, buttonOllo;
+    private Toast piritos;
+    private AlertDialog customDialog;
 
 
     @Override
@@ -68,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         if(teTipp == 0 && gepTipp == 1){
             gepScoreSzam++;
             gepScore.setText("Computer: " + gepScoreSzam);
+
         }
         else if(teTipp == 0 && gepTipp == 2){
             emberScoreSzam++;
@@ -104,5 +111,16 @@ public class MainActivity extends AppCompatActivity {
         buttonKo = findViewById(R.id.buttonKo);
         buttonPapir = findViewById(R.id.buttonPapir);
         buttonOllo = findViewById(R.id.buttonOllo);
+        piritos = new Toast(getApplicationContext());
+        customPiritos();
     }
+
+    public void customPiritos(){
+        piritos.setDuration(Toast.LENGTH_SHORT);
+        View view = getLayoutInflater().inflate(R.layout.piritos, (ViewGroup) findViewById(R.id.customPiritos));
+        piritos.setView(view);
+        piritos.setGravity(Gravity.CENTER, 0, 0);
+    }
+
+
 }
