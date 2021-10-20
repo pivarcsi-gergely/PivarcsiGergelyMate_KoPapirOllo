@@ -67,22 +67,27 @@ public class MainActivity extends AppCompatActivity {
     public void kiNyerEgyFordulot(){
         if(teTipp == 0 && gepTipp == 1){
             gepScoreSzam++;
-            gepScore.setText("Computer" + gepScoreSzam);
+            gepScore.setText("Computer: " + gepScoreSzam);
         }
         else if(teTipp == 0 && gepTipp == 2){
             emberScoreSzam++;
+            emberScore.setText("Ember: " + emberScoreSzam);
         }
         else if(teTipp == 1 && gepTipp == 0){
             emberScoreSzam++;
+            emberScore.setText("Ember: " + emberScoreSzam);
         }
         else if(teTipp == 2 && gepTipp == 0){
             gepScoreSzam++;
+            gepScore.setText("Computer: " + gepScoreSzam);
         }
         else if(teTipp == 2 && gepTipp == 1){
             emberScoreSzam++;
+            emberScore.setText("Ember: " + emberScoreSzam);
         }
         else if(teTipp == 1 && gepTipp == 2){
             gepScoreSzam++;
+            gepScore.setText("Computer: " + gepScoreSzam);
         }
     }
 
