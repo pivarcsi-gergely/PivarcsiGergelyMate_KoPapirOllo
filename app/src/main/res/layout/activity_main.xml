@@ -62,20 +62,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Eredmény:"
-                android:textSize="27sp"
+                android:textSize="24sp"
                 android:layout_marginRight="7sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ember: 0"
-                android:textSize="27sp"
+                android:textSize="24sp"
                 android:layout_marginRight="7sp"
                 android:id="@+id/emberScore"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Computer: 0"
-                android:textSize="27sp"
+                android:textSize="24sp"
                 android:layout_marginRight="7sp"
                 android:id="@+id/gepScore"/>
 
@@ -94,19 +94,22 @@
                 android:layout_height="wrap_content"
                 android:text="Kő"
                 android:layout_marginRight="25sp"
-                android:id="@+id/buttonKo"/>
+                android:id="@+id/buttonKo"
+                android:textSize="18sp"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Papír"
                 android:layout_marginRight="25sp"
-                android:id="@+id/buttonPapir"/>
+                android:id="@+id/buttonPapir"
+                android:textSize="18sp"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Olló"
                 android:layout_marginRight="25sp"
-                android:id="@+id/buttonOllo"/>
+                android:id="@+id/buttonOllo"
+                android:textSize="18sp"/>
 
 
         </LinearLayout>
